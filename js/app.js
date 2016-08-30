@@ -96,28 +96,28 @@ function writeUserData() {
 // Buttons On Storefront
 // _____________________________________________________________________________
 function write1() {
-  firebase.database().ref('Item 1').transaction(function(value) {
+  firebase.database().ref('Demand/Item 1').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
 }
 
 function write2() {
-  firebase.database().ref('Item 2').transaction(function(value) {
+  firebase.database().ref('Demand/Item 2').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
 }
 
 function write3() {
-  firebase.database().ref('Item 3').transaction(function(value) {
+  firebase.database().ref('Demand/Item 3').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
 }
 
 function write4() {
-  firebase.database().ref('Item 4').transaction(function(value) {
+  firebase.database().ref('Demand/Item 4').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
