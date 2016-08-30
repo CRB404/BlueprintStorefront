@@ -1,5 +1,5 @@
 
-Blueprint Box Interface
+Blueprint Storefront Interface
 =========
 
-The front end and firebase call back to particle for the blueprint box prototype.
+The front end and firebase call back the Storefront blueprint prototype.

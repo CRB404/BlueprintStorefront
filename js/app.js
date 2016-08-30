@@ -35,24 +35,24 @@ lossVal.once("value")
     document.getElementById("lossValue").innerHTML=circles;
   });
 
-// Auto-Update Bounty and Graph
+// Auto-Update Bounty and Graph  *double commented*
 
-lossVal.on('child_changed', function(data) {
-  // var lossName = data.child("/val").val();
-  console.log("New Value " + data.val());
-
-  // working with zero index so subtract one
-  var graphsDisplay = data.val() - 1;
-
-  var circles = graphs[graphsDisplay]
-
-  document.getElementById("lossValue").innerHTML=circles;
-
-  // lossName.onChange = function() {
-  //   document.getElementById("lossValue").innerHTML=lossName;
-  //   console.log(lossName);
-  // }
-});
+// lossVal.on('child_changed', function(data) {
+//   // var lossName = data.child("/val").val();
+//   console.log("New Value " + data.val());
+//
+//   // working with zero index so subtract one
+//   var graphsDisplay = data.val() - 1;
+//
+//   var circles = graphs[graphsDisplay]
+//
+//   document.getElementById("lossValue").innerHTML=circles;
+//
+//   // lossName.onChange = function() {
+//   //   document.getElementById("lossValue").innerHTML=lossName;
+//   //   console.log(lossName);
+//   // }
+// });
 
 
 // function writeUp() {
@@ -91,3 +91,34 @@ function writeUserData() {
 //        //between the <a ...> </a> tags with the value of splitText
 //
 // }
+
+
+// Buttons On Storefront
+// _____________________________________________________________________________
+function write1() {
+  firebase.database().ref('Item 1').transaction(function(value) {
+    console.log('value', value);
+    return value + 1;
+  });
+}
+
+function write2() {
+  firebase.database().ref('Item 2').transaction(function(value) {
+    console.log('value', value);
+    return value + 1;
+  });
+}
+
+function write3() {
+  firebase.database().ref('Item 3').transaction(function(value) {
+    console.log('value', value);
+    return value + 1;
+  });
+}
+
+function write4() {
+  firebase.database().ref('Item 4').transaction(function(value) {
+    console.log('value', value);
+    return value + 1;
+  });
+}
