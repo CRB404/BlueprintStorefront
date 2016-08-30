@@ -407,25 +407,25 @@ h1 {
 /* Search Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .box{
-  width: 300px;
+  width: 98%px;
   height: 50px;
 }
 
 .container-4{
   overflow: hidden;
-  width: 300px;
+  width: 98%;
   vertical-align: middle;
   white-space: nowrap;
 }
 
 .container-4 input#search{
-  width: 300px;
+  width: 98%;
   height: 50px;
   background: transparent;
   border: none;
   font-size: 10pt;
   float: left;
-  color: #000;
+  color: #fff;
   padding-left: 1px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -433,19 +433,19 @@ h1 {
 }
 
 .container-4 input#search::-webkit-input-placeholder {
-   color: #000;
+   color: #B3B3B3;
 }
 
 .container-4 input#search:-moz-placeholder {
-   color: #000;
+   color: #B3B3B3;
 }
 
 .container-4 input#search::-moz-placeholder {
-   color: #000;
+   color: #B3B3B3;
 }
 
 .container-4 input#search:-ms-input-placeholder {
-   color: #000;
+   color: #B3B3B3;
 }
 
 .container-4 button.icon{

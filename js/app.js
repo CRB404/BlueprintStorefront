@@ -1,15 +1,7 @@
-var variable = firebase.database().ref('query');
+var variable = firebase.database().ref('inputs');
 var lossVal = firebase.database().ref();
 
 // Graph Array
-
-// var graphs = [
-//   'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',
-//   'q','r','s','t','u','v','w','x','y','z',
-//
-//   'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P',
-//   'Q','R','S','T','U','V','W','X','Y'
-// ]
 
 var graphs = [
   'Y','X','W','V','U','T','S','R','Q','P','O','N','M','L','K','J',
@@ -24,16 +16,16 @@ var graphs = [
 
 // OnLoad Update Bounty and Graph
 
-lossVal.once("value")
-  .then(function(snapshot) {
-    var name = snapshot.child('penalty').val(); // {loss value}
-
-    var graphsDisplay = name - 1;
-
-    var circles = graphs[graphsDisplay]
-
-    document.getElementById("lossValue").innerHTML=circles;
-  });
+// lossVal.once("value")
+//   .then(function(snapshot) {
+//     var name = snapshot.child('penalty').val(); // {loss value}
+//
+//     var graphsDisplay = name - 1;
+//
+//     var circles = graphs[graphsDisplay]
+//
+//     document.getElementById("lossValue").innerHTML=circles;
+//   });
 
 // Auto-Update Bounty and Graph  *double commented*
 
@@ -71,7 +63,7 @@ lossVal.once("value")
 // _____________________________________________________________________________
 
 function writeUserData() {
-  variable.set({ val: document.getElementById("search").value })
+  variable.push({ val:document.getElementById("search").value })
     .then(function() {
       console.log('Synchronization succeeded');
     })
@@ -80,6 +72,7 @@ function writeUserData() {
     });
 }
 
+// Call search results and display
 
 // window.onload = function() {
 //   firebase.database().ref('query/val').once('value').then(function(snapshot) {
