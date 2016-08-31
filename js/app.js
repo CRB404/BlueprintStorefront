@@ -69,7 +69,11 @@ function writeUserData() {
     })
     .catch(function(error) {
       console.log('Synchronization failed');
-    });
+    })
+  firebase.database().ref('Demand/Other').transaction(function(value) {
+    console.log('value', value);
+    return value + 1;
+  });
 }
 
 // Call search results and display
