@@ -63,11 +63,6 @@ var graphs = [
 // _____________________________________________________________________________
 
 function writeUserData() {
-  lossVal.ref('Demand/Other').transaction(function(value) {
-    console.log('value', value);
-    return value + 1;
-  })
-
   variable.push({ val:document.getElementById("search").value })
     .then(function() {
       console.log('Synchronization succeeded');
