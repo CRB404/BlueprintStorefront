@@ -115,3 +115,10 @@ function write4() {
     return value + 1;
   });
 }
+
+function write5() {
+  firebase.database().ref('Demand/Other').transaction(function(value) {
+    console.log('value', value);
+    return value + 1;
+  });
+}
