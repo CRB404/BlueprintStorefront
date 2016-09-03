@@ -8,8 +8,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Storefront</title>
-		<meta name="description" content="A prototype page for an autonomous box" />
-		<meta name="keywords" content="CoLab, IoT, blockchain, internet of things" />
+		<meta name="description" content="A prototype page for an autonomous box"/>
+		<meta name="keywords" content="CoLab, IoT, blockchain, internet of things"/>
 		<meta name="author" content="CoLab" />
 		<!-- <link rel="shortcut icon" href="../favicon.ico"> -->
 
@@ -33,66 +33,41 @@
 
 <!-- Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div class="container" style="width: 100%; background-color: #F3F3F3;">
+		<!-- <div class="container" style="width: 100%; background-color: #F3F3F3;">
 			<div class="row">
 				<div class="twelve column" style="margin-top: 3%;">
 					<h4>STOREFRONT</h4>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 
 <!-- Begin of Moving Pages
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="pt-main" class="pt-perspective">
-
-			<!-- Begin Page 1 -->
-			<div class="pt-page pt-page-1">
-				<div class="container">
-					<div class="row" style="margin-top: 5%;">
-						<button onclick="write1()" style="width:49%;height:auto; margin-bottom: 10%;">Item 1</button>
-						<button onclick="write2()" style="width:49%;height:auto; margin-bottom: 10%;">Item 2</button>
-					</div>
-					<div class="row" style="margin-top: 5%;">
-						<button onclick="write3()" style="width:49%;height:auto; margin-bottom: 10%;">Item 3</button>
-						<button onclick="write4()" style="width:49%;height:auto; margin-bottom: 10%;">Item 4</button>
-					</div>
-					<div class="row" style="margin-top: 5%;">
-						<a href="otheritem.html"><button style="width:98%;height:auto; margin-bottom: 10%;">There is nothing here I want</button></a>
-					</div>
-				</div>
 
 
-				<!-- Search bar -->
-				<div class="container">
-					<!-- <div class="row">
-						<div class="box">
-							<div class="container-4">
-								<input type="text" id="search" placeholder="do things here" value=""/>
-								<a href="callindex.html">
-									<button class="icon" onclick="writeUserData()"><i class="fa fa-search" style="vertical-align: left;"></i></button>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div> -->
+		<div class="container" id="left" style="">
+			<div class="space" id="Lright">
+				<h1>PRODUCT VOTE</h1>
+				<h2>Please select the product you<br>would like to have available<br>in this storefront machine.</h2>
 			</div>
-			<!-- End of Page 1 -->
-
-			<!-- Begin Page 2 -->
-			<div class="pt-page pt-page-2">
-				<div class="container">
-					<div class="row">
-						<div class="one-half column" style="margin-top: 20%">
-							<h4 style="font-family: 'PT Sans Caption', sans-serif; font-weight:300; font-size:16px;">Dispatch is a thing yay!</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Page 2 -->
-
 		</div>
-		<!-- End of Moving Pages -->
+		<div class="container" id="right" style="">
+			<div class="space" id="Sright">
+				<div class="row" style="margin-top: 5%;">
+					<button class="selector" id="s1" onclick="write1()"></button>
+					<button class="selector" id="s2" onclick="write2()"></button>
+				</div>
+				<div class="row" style="margin-top: 5%;">
+					<button class="selector" id="s3" onclick="write3()"></button>
+					<button class="selector" id="s4" onclick="write4()"></button>
+				</div>
+				<div class="row" style="margin-top: 5%;">
+					<a href="otheritem.html"><button id="other">I WANT SOMETHING ELSE</button></a>
+				</div>
+			</div>
+		</div>
+
 
 		<!-- Update Broswer -->
 		<div class="pt-message">

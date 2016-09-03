@@ -36,6 +36,22 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
+.container#left {
+  width:50%;
+  height: 100%;
+  background: #fff;
+  float:left;
+
+}
+.container#right {
+  width:50%;
+  height: 100%;
+  background: #F9F9F9;
+  float:right;
+}
+.space {
+
+}
 .column,
 .columns {
   width: 100%;
@@ -174,7 +190,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: #CCCCCC;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -184,8 +200,8 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
+  border-radius: 6px;
+  border: 1px solid transparent;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -199,7 +215,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #888;
+  border-color: transparent;;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -383,27 +399,106 @@ hr {
 /* Background */
 body {
   height: 100%;
-  background: #1E1833;
+
   /*background: #F05B53;*/
 }
 
-/* Header Font */
+.space{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.space#Sright{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+/* Sub Header Font */
 h4 {
-  font-family: 'Cera Light', sans-serif;
+  font-family: 'Cera Bold';
   font-size:20px;
   text-align: center;
   color: #231f20;
   letter-spacing: 2px;
 }
 
-/* Main Alert Font */
+/* Core Header Font*/
 h1 {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 200px;
-  text-align: center;
+  color: #727474;
+  font-family: 'Cera Bold';
+  font-size: 40px;
+  text-align: left;
 }
 
+h2 {
+  color: #CCCCCC;
+  font-family: 'Droid Bold Italic';
+  font-size: 20px;
+  text-align: left;
+}
+
+.selector {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10%;
+}
+
+.selector#s1 {
+  float: left;
+  margin-right: 14%;
+  background: #3F76C5; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg, #3F76C5, #46CDA5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, #3F76C5, #46CDA5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #3F76C5, #46CDA5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #3F76C5, #46CDA5); /* Standard syntax */
+}
+
+.selector#s2 {
+  float: right;
+  margin-left: 14%;
+  background: #3F3FB2; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg, #3F3FB2, #AB7DC1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, #3F3FB2, #AB7DC1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #3F3FB2, #AB7DC1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #3F3FB2, #AB7DC1); /* Standard syntax */
+}
+
+.selector#s3 {
+  float: left;
+  margin-right: 14%;
+  background: #79E66C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg, #79E66C, #FFEF2C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, #79E66C, #FFEF2C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #79E66C, #FFEF2C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #79E66C, #FFEF2C); /* Standard syntax */
+}
+
+.selector#s4 {
+  float: right;
+  margin-left: 14%;
+  background: #F90903; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg, #F90903, #EA738F); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, #F90903, #EA738F); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #F90903, #EA738F); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #F90903, #EA738F); /* Standard syntax */
+}
+
+button#other {
+  border: 1px solid #D8D8D7;
+  background: white;
+  height: 120px;
+  margin-bottom: 10%;
+  width: 100%;
+  font-family: 'Cera Bold';
+  font-size: 20px;
+
+}
 /* Search Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .box{
@@ -543,8 +638,13 @@ li {
 /* Circles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
-    font-family: 'Cera Light'; /*a name to be used later*/
-    src: url('../fonts/Cera GR Light.otf'); /*URL to font*/
+    font-family: 'Cera Bold'; /*a name to be used later*/
+    src: url('../fonts/Cera GR Bold.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Droid Bold Italic'; /*a name to be used later*/
+    src: url('../fonts/DroidSerif-BoldItalic.ttf');
 }
 
 /* Clearing
