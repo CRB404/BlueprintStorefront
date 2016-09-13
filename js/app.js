@@ -89,35 +89,35 @@ function writeUserData() {
 // Buttons On Storefront
 // _____________________________________________________________________________
 function write1() {
-  firebase.database().ref('Demand/HONEST T').transaction(function(value) {
+  firebase.database().ref('Demand/Item 1').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
 }
 
 function write2() {
-  firebase.database().ref('Demand/HERSHEYS').transaction(function(value) {
+  firebase.database().ref('Demand/Item 2').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
 }
 
 function write3() {
-  firebase.database().ref('Demand/PRETZEL THINS').transaction(function(value) {
+  firebase.database().ref('Demand/Item 3').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
 }
 
 function write4() {
-  firebase.database().ref('Demand/COCA COLA').transaction(function(value) {
+  firebase.database().ref('Demand/Item 4').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
 }
 
 function write5() {
-  firebase.database().ref('Demand/OTHER').transaction(function(value) {
+  firebase.database().ref('Demand/Other').transaction(function(value) {
     console.log('value', value);
     return value + 1;
   });
