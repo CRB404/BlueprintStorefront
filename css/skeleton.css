@@ -447,6 +447,13 @@ h2 {
   width: 120px;
   height: 120px;
   margin-bottom: 10%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.selector h2 {
+  color: #727474;
+  font-family: 'Cera Bold';
 }
 
 .selector#s1 {
