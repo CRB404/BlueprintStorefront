@@ -522,7 +522,7 @@ button#other {
 
 .container-4 input#search{
   width: 98%;
-  height: 50px;
+  height: 45px;
   background: transparent;
   border: none;
   font-size: 10pt;
@@ -532,6 +532,8 @@ button#other {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  padding: 20px;
+  border-style: solid;
 }
 
 .container-4 input#search::-webkit-input-placeholder {
